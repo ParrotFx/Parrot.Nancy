@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Parrot.Infrastructure;
-using Parrot.Nodes;
-using Parrot.Parser;
-using Parrot.Renderers;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using Parrot.Infrastructure;
+    using Parrot.Nodes;
+    using Parrot.Parser;
+    using Parrot.Renderers;
+    using Parrot.Renderers.Infrastructure;
+
     /// <summary>
     /// Parrot view for Nancy
     /// </summary>

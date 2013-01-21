@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Nancy.Bootstrapper;
-using Parrot.Infrastructure;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using System.Collections.Generic;
+    using Parrot.Renderers.Infrastructure;
+    using global::Nancy.Bootstrapper;
+    using global::Nancy.ViewEngines;
+
     /// <summary>
     /// Register the dependencies with Nancy
     /// </summary>

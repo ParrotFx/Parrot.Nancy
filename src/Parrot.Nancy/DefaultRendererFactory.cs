@@ -1,9 +1,8 @@
-﻿using Parrot.Infrastructure;
-using Parrot.Renderers;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using Parrot.Renderers;
+    using Parrot.Renderers.Infrastructure;
+
     /// <summary>
     /// Default renderer factory for Nancy
     /// Includes Nancy specific implementations for

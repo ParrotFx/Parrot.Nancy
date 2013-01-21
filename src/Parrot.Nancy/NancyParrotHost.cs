@@ -1,12 +1,8 @@
-﻿using System;
-using System.Reflection;
-using System.Text;
-using Parrot.Infrastructure;
-using Parrot.Renderers;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using Parrot.Infrastructure;
+    using Parrot.Renderers.Infrastructure;
+
     /// <summary>
     /// Nancy host for Parrot
     /// </summary>

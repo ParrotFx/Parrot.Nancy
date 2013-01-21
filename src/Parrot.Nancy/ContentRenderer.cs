@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using Parrot.Infrastructure;
-using Parrot.Nodes;
-using Parrot.Renderers;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using System;
+    using System.Collections.Generic;
+    using Parrot.Infrastructure;
+    using Parrot.Nodes;
+    using Parrot.Renderers;
+    using Parrot.Renderers.Infrastructure;
+
     /// <summary>
     /// Content renderer specific to Nancy
     /// Only valid within a layout tag

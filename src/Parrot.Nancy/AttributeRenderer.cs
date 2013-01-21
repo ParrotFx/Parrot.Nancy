@@ -1,8 +1,9 @@
-﻿using System;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using System;
+    using Parrot.Renderers.Infrastructure;
+    using global::Nancy.ViewEngines;
+
     class AttributeRenderer : IAttributeRenderer
     {
         private readonly IRenderContext _renderContext;

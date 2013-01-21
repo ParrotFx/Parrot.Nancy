@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using global::Nancy.ViewEngines;
+
     public class ParrotViewLocator
     {
         private readonly IEnumerable<ViewLocationResult> _viewLocationResults;

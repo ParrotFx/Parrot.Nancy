@@ -37,11 +37,10 @@
       <HintPath>..\packages\Nancy.0.15.1\lib\net40\Nancy.dll</HintPath>
     </Reference>
     <Reference Include="Parrot">
-      <HintPath>..\..\..\TempReferences\Parrot.dll</HintPath>
+      <HintPath>..\packages\Parrot.0.0.6\lib\Parrot.dll</HintPath>
     </Reference>
-    <Reference Include="Parrot.Renderers, Version=0.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\TempReferences\Parrot.Renderers.dll</HintPath>
+    <Reference Include="Parrot.Renderers">
+      <HintPath>..\packages\Parrot.Renderers.0.0.6\lib\Parrot.Renderers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

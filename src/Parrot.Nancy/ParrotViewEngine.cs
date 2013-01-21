@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Nancy.Responses;
-using Parrot.Infrastructure;
-using Parrot.Renderers.Infrastructure;
-
-namespace Nancy.ViewEngines.Parrot
+﻿namespace Parrot.Nancy
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using Parrot.Renderers.Infrastructure;
+    using global::Nancy;
+    using global::Nancy.Responses;
+    using global::Nancy.ViewEngines;
+
     public class ParrotViewEngine : IViewEngine
     {
         private readonly IModelValueProviderFactory _modelValueProviderFactory;
