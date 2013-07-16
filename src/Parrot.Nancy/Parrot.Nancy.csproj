@@ -32,15 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nancy, Version=0.15.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Nancy, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nancy.0.15.1\lib\net40\Nancy.dll</HintPath>
+      <HintPath>..\packages\Nancy.0.18.0\lib\net40\Nancy.dll</HintPath>
     </Reference>
     <Reference Include="Parrot">
-      <HintPath>..\packages\Parrot.0.0.6\lib\Parrot.dll</HintPath>
+      <HintPath>..\packages\Parrot.1.0.1\lib\Parrot.dll</HintPath>
     </Reference>
     <Reference Include="Parrot.Renderers">
-      <HintPath>..\packages\Parrot.Renderers.0.0.6\lib\Parrot.Renderers.dll</HintPath>
+      <HintPath>..\packages\Parrot.Renderers.1.0.1\lib\Parrot.Renderers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,6 +56,7 @@
     <Compile Include="ContentRenderer.cs" />
     <Compile Include="DefaultRendererFactory.cs" />
     <Compile Include="LayoutRenderer.cs" />
+    <Compile Include="NancyPathResolver.cs" />
     <Compile Include="ParrotRegistrations.cs" />
     <Compile Include="ParrotView.cs" />
     <Compile Include="ParrotViewEngine.cs" />

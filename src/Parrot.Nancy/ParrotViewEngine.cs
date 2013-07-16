@@ -1,6 +1,5 @@
 ﻿namespace Parrot.Nancy
 {
-    using System;
     using System.Collections.Generic;
     using System.IO;
     using Parrot.Renderers.Infrastructure;
@@ -27,7 +26,7 @@
         public void Initialize(ViewEngineStartupContext viewEngineStartupContext)
         {
             _viewEngineStartupContext = viewEngineStartupContext;
-            _parrotViewLocator = new ParrotViewLocator(_viewEngineStartupContext.ViewLocationResults);
+            _parrotViewLocator = new ParrotViewLocator(_viewEngineStartupContext.ViewLocator.GetAllCurrentlyDiscoveredViews());
         }
 
         public Response RenderView(ViewLocationResult viewLocationResult, dynamic model, IRenderContext renderContext)
@@ -45,50 +44,6 @@
 
                     writer.Flush();
                 });
-        }
-    }
-
-    public class NancyPathResolver : IPathResolver
-    {
-        private readonly IRenderContext _renderContext;
-
-        public NancyPathResolver(IRenderContext renderContext)
-        {
-            _renderContext = renderContext;
-        }
-
-        public Stream OpenFile(string path)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public bool FileExists(string path)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public string ResolvePath(string path)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public string ResolveAttributeRelativePath(string key, object value)
-        {
-            if (value != null)
-            {
-                string temp = value.ToString();
-                if (temp.StartsWith("~/") && !key.StartsWith("data-val", StringComparison.OrdinalIgnoreCase))
-                {
-                    //convert this to a server path
-
-                    return _renderContext.ParsePath(temp);
-
-                }
-                return temp;
-            }
-
-            return null;
-
         }
     }
 }
